@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: Raw data storeged on Databrick cloud.
+    database: workspace
+    schema: default
+    tables:
+      - name: jaffle_shop_customers
+        description: Customers raw data.
+        columns:
+          - name: id
+            tests:
+              - not_null
+      - name: jaffle_shop_orders
+        description: Orders raw data.
+        columns:
+          - name: id
+            tests:
+              - not_null

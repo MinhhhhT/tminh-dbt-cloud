@@ -6,4 +6,4 @@ SELECT
     amount / 100 AS amount,
     created AS created_date
 FROM 
-    default.stripe_payments
+    {{ source('stripe', 'stripe_payments') }}
