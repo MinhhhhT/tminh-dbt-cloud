@@ -1,6 +1,6 @@
 {% test warn_if_odd(model, column_name) %}
 
-    {{ config(severity = 'warn') }}
+    {{ config(severity = 'warning') }}
 
     SELECT * 
     FROM {{ model }}
